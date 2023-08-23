@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Socialbook</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- ---------navbar--------- -->
+
+
+  <!-- ---------navbar-left--------- -->
+
+  <nav>
+    <div class="nav-left">
+      <img src="./assets/logo.png" class="logo">
+      <ul>
+        <li><img src="./assets/notification.png"></li>
+        <li><img src="./assets/inbox.png"></li>
+        <li><img src="./assets/video.png"></li>
+      </ul>
+    </div>
+
+    <!-- ---------navbar-right--------- -->
+
+    <div class="nav-right">
+
+      <div class="search-box">
+        <img src="./assets/search.png">
+        <input type="text" placeholder="Search">
+      </div>
+      <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+        <img src="./assets/profile-pic.png">
+      </div>
+
+    </div>
+
+    <!-- -------------Settings-Menu-------------- -->
+
+      <div class="settings-menu">
+
+        <div id="dark-btn">
+          <span></span>
+        </div>
+
+
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="./assets/profile-pic.png">
+            <div>
+              <p>Sunil Kumar Sahu</p>
+              <a href="">See Your profile</a>
+            </div>
+          </div>
+          <hr>
+          <div class="user-profile">
+            <img src="./assets/feedback.png">
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve to new design</a>
+            </div>
+          </div>
+          <hr>
+          <div class="settings-links">
+            <img src="./assets/setting.png" class="settings-icon">
+            <a href="#">Settings & Privacy <img src="./assets/arrow.png" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="./assets/help.png" class="settings-icon">
+            <a href="#">Help & Support <img src="./assets/arrow.png" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="./assets/display.png" class="settings-icon">
+            <a href="#">Display & Accessibility <img src="./assets/arrow.png" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="./assets/logout.png" class="settings-icon">
+            <a href="#">Logout <img src="./assets/arrow.png" width="10px"></a>
+          </div>
+        </div>
+  
+
+
+      </div>
+  </nav>
+
+
+  <div class="container">
+
+    <!-- -------------left-sidebar-------------- -->
+
+    <div class="left-sidebar">
+      <div class="imp-links">
+        <a href=""><img src="./assets/news.png">Latest News</a>
+        <a href=""><img src="./assets/friends.png">Friends</a>
+        <a href=""><img src="./assets/group.png">Group</a>
+        <a href=""><img src="./assets/marketplace.png">Marketplace</a>
+        <a href=""><img src="./assets/Watch.png">Watch</a>
+        <a href="">See More</a>
+      </div>
+
+      <div class="shortcut-links">
+        <p>Your Shortcuts</p>
+        <a href=""><img src="./assets/shortcut-1.png">Web Developers</a>
+        <a href=""><img src="./assets/shortcut-2.png">Web Design Course</a>
+        <a href=""><img src="./assets/shortcut-3.png">Full Stack Development</a>
+        <a href=""><img src="./assets/shortcut-4.png">WebExperts</a>
+      </div>
+
+    </div>
+
+    <!-- -------------Main-Content-------------- -->
+
+    <div class="main-content">
+      <!-------/stories-------->
+
+      <div class="story-gallery">
+        <div class="story story1">
+          <img src="./assets/upload.png">
+          <p>Post Story</p>
+        </div>
+        <div class="story story2">
+          <img src="./assets/member-1.png">
+          <p>Vijay Tiwary</p>
+        </div>
+        <div class="story story3">
+          <img src="./assets/member-4.png">
+          <p>Akshita </p>
+        </div>
+        <div class="story story4">
+          <img src="./assets/member-2.png">
+          <p>Kamran</p>
+        </div>
+        <div class="story story5">
+          <img src="./assets/member-3.png">
+          <p>Saksham</p>
+        </div>
+      </div>
+
+      <!-- -------posts------ -->
+
+      <div class="write-post-container">
+
+        <div class="user-profile">
+          <img src="./assets/profile-pic.png">
+          <div>
+            <p>Sunil Kumar Sahu</p>
+            <small>Public </small><i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+
+        <div class="post-input-container">
+          <textarea rows="3" placeholder="What's on your mind, Sunil?"></textarea>
+
+          <div class="add-post-links">
+            <a href=""><img src="./assets/live-video.png">Live Video</a>
+            <a href=""><img src="./assets/photo.png">Photo/Video</a>
+            <a href=""><img src="./assets/feeling.png">Feling/Activity</a>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="./assets/profile-pic.png">
+            <div>
+              <p>Sunil Kumar Sahu</p>
+              <span>May 09 2023, 11:40 pm</span>
+            </div>
+          </div>
+          <a href=""><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p class="post-text">Subuscribe <span>@Esacpe From Here</span> YouTube channel to watch more videos on website
+          development and UI design. <a href="">#EscapeFromHere</a></p>
+        <img src="./assets/feed-image-1.png" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="./assets/like.png">288</div>
+            <div><img src="./assets/comments.png">140</div>
+            <div><img src="./assets/share.png">88</div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="./assets/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="./assets/profile-pic.png">
+            <div>
+              <p>Sunil Kumar Sahu</p>
+              <span>June 14 2023, 16:40 pm</span>
+            </div>
+          </div>
+          <a href=""><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p class="post-text">Like and share this video with friends, tag <span>@Escape From Here</span> facebook page on
+          your post. Ask your doubts in the coments. <a href="">#EscapeFromHere</a> <a href="">#YouTubeChannel</a></p>
+        <img src="./assets/feed-image-2.png" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="./assets/like.png">318</div>
+            <div><img src="./assets/comments.png">110</div>
+            <div><img src="./assets/share.png">89</div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="./assets/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="./assets/profile-pic.png">
+            <div>
+              <p>Sunil Kumar Sahu</p>
+              <span>July 01 2023, 17:50 pm</span>
+            </div>
+          </div>
+          <a href=""><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p class="post-text">STYLE ऐसा करो की दुनिया देखती जाये
+
+          और यारी ऐसी करो की दुनिया जलती रह जाए.
+
+          <span>@Escape From Here</span> facebook page on your post. Ask your doubts in the coments. <a
+            href="">#EscapeFromHere</a> <a href="">#YouTubeChannel</a>
+        </p>
+        <img src="./assets/feed-image-3.png" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="./assets/like.png">518</div>
+            <div><img src="./assets/comments.png">198</div>
+            <div><img src="./assets/share.png">169</div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="./assets/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="./assets/profile-pic.png">
+            <div>
+              <p>Sunil Kumar Sahu</p>
+              <span>July 29 2023, 17:30 pm</span>
+            </div>
+          </div>
+          <a href=""><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p class="post-text">अगर तुम्हारी ego मुझसे बात करेगी तो मेरा attitude तुम से बात करेगा.. <span>@Esacpe From
+            Here</span> YouTube channel to watch more videos on website development and UI design. <a
+            href="">#EscapeFromHere</a></p>
+        <img src="./assets/feed-image-4.png" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="./assets/like.png">688</div>
+            <div><img src="./assets/comments.png">340</div>
+            <div><img src="./assets/share.png">288</div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="./assets/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="./assets/profile-pic.png">
+            <div>
+              <p>Sunil Kumar Sahu</p>
+              <span>Aug 07 2023, 06:40 am</span>
+            </div>
+          </div>
+          <a href=""><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p class="post-text"> “I don’t follow other people. I follow my own orders because I’m my own
+          boss.”<span>@Escape From Here</span> facebook page on your post. Ask your doubts in the coments. <a
+            href="">#EscapeFromHere</a> <a href="">#YouTubeChannel</a></p>
+        <img src="./assets/feed-image-5.png" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="./assets/like.png">1118</div>
+            <div><img src="./assets/comments.png">670</div>
+            <div><img src="./assets/share.png">589</div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="./assets/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+
+      </div>
+
+
+      <button type="button" class="load-more-btn">Load More</button>
+
+
+    </div>
+    <!-- -------------Right-sidebar-------------- -->
+
+    <div class="right-sidebar">
+
+      <div class="sidebar-title">
+        <h4>Events</h4>
+        <a href="">See All</a>
+      </div>
+
+      <div class="event">
+        <div class="left-event">
+          <h3>16</h3>
+          <span>July</span>
+        </div>
+
+        <div class="right-event">
+          <h4>Social Media</h4>
+          <p><i class="fa-solid fa-location-dot"></i> Wilson Tech Park</p>
+          <a href="">More Info</a>
+        </div>
+      </div>
+      <div class="event">
+        <div class="left-event">
+          <h3>07</h3>
+          <span>Aug</span>
+        </div>
+
+        <div class="right-event">
+
+          <h4>Mobile Marketing</h4>
+          <p><i class="fa-solid fa-location-dot"></i> Down Town Hill</p>
+          <a href="">More Info</a>
+        </div>
+      </div>
+
+      <div class="sidebar-title">
+        <h4>Advertisment</h4>
+        <a href="">Close</a>
+      </div>
+      <img src="./assets/advertisement.png" class="sidebar-ads">
+
+      <div class="sidebar-title">
+        <h4>Conversation</h4>
+        <a href="">Hide Chat</a>
+      </div>
+
+      <div class="online-list">
+        <div class="online">
+          <img src="./assets/member-1.png">
+        </div>
+        <p>Vijay Tiwari</p>
+      </div>
+      <div class="online-list">
+        <div class="online">
+          <img src="./assets/member-4.png">
+        </div>
+        <p>Akshita Saxsena</p>
+      </div>
+      <div class="online-list">
+        <div class="online">
+          <img src="./assets/member-2.png">
+        </div>
+        <p>Kamran</p>
+      </div>
+      <div class="online-list">
+        <div class="online">
+          <img src="./assets/member-3.png">
+        </div>
+        <p>Saksham</p>
+      </div>
+      <div class="online-list">
+        <div class="online">
+          <img src="./assets/member-5.png">
+        </div>
+        <p>Neetu Mahale</p>
+      </div>
+      <div class="online-list">
+        <div class="online">
+          <img src="./assets/member-6.png">
+        </div>
+        <p>Gayatri Prajapati</p>
+      </div>
+      <div class="online-list">
+        <div class="online">
+          <img src="./assets/member-7.png">
+        </div>
+        <p>Ajay</p>
+      </div>
+      <div class="online-list">
+        <div class="online">
+          <img src="./assets/member-8.png">
+        </div>
+        <p>Diksha Deshmukh</p>
+      </div>
+      <div class="online-list">
+        <div class="online">
+          <img src="./assets/member-9.png">
+        </div>
+        <p>Amit</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>&copy Copyright 2023 - Sunil Kumar Sahu (Presently Tech Academy )</p>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
